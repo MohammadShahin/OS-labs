@@ -1,0 +1,1 @@
+We notice that 8 processes are added to the process tree since we have 3 forks in the program.

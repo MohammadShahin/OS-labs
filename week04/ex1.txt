@@ -1,0 +1,1 @@
+We notice that the PID increases by two each time we run the program because we are starting two processes each time.
