@@ -1,0 +1,2 @@
+We notice that the method followed in the first exercise (FCFS) achieved a better performance than the other methods. While the the method in the third exercise showed a better performance than the second one.
+These results can be because of the different number of switches between the methods.
