@@ -1,1 +1,3 @@
+In order to increase the Hit/Miss ratio, we can make all references call the same page. Thus the only miss will occur in the first reference, while all the others will be hits. This approach results in Hit/Miss ratio of (Total number of references - 1).
 
+Now to make Hit/Miss ratio as minimum as possible, we can make different references call different pages (all pages called should be distinct). Therefore none of the references will result in a hit. So Hit/Miss ratio will be zero because the number of hits is equal to zero.
