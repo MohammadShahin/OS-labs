@@ -1,0 +1,17 @@
+hash@hash-VirtualBox:~/week10$ touch _ex3.txt
+hash@hash-VirtualBox:~/week10$ chmod a-x _ex3.txt
+hash@hash-VirtualBox:~/week10$ chmod uo+rwx _ex3.txt
+hash@hash-VirtualBox:~/week10$ chmod g=u _ex3.txt
+
+
+----------------------------------------------------
+
+The first digit is for users (owner), second is group, and third is everyone else (other). 
+
+read = 4, write = 2, execute = 1
+
+660: It gives users and groups read/write permissions, and it doesn't give any permission to others. 
+
+775: It gives users and groups all permissions (read/write/execute). Also it gives read/execute permissions to others.
+
+777: It gives all permessions (read/write/execute) to everyone (user/group/other). 

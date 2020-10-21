@@ -1,0 +1,10 @@
+hash@hash-VirtualBox:~/week10$ touch ~/week01/file.txt
+hash@hash-VirtualBox:~/week10$ link ~/week01/file.txt _ex2.txt
+hash@hash-VirtualBox:~/week10$ ls -i _ex2.txt
+2763186 _ex2.txt
+hash@hash-VirtualBox:~/week10$ find ~/ -inum 2763186
+/home/hash/week10/_ex2.txt
+/home/hash/week01/file.txt
+hash@hash-VirtualBox:~/week10$ find ~/ -inum 2763186 -exec rm {} \;
+hash@hash-VirtualBox:~/week10$ find ~/ -inum 2763186
+
