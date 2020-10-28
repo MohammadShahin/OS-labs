@@ -15,7 +15,7 @@ int main() {
     printf("ERROR!");
     return 1;
   }
-  ok = fstat(f1, &st2);
+  ok = fstat(f2, &st2);
   if (ok){
     printf("ERROR!");
     return 1;
