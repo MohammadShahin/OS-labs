@@ -7,8 +7,6 @@
 #include <string.h>
 
 int main() {
-  char* text = "This is a nice day";
-  size_t textsize = strlen(text); // + \0 null character
   int f1 = open("ex1.txt", O_RDWR);
   int f2 = open("ex1.memcpy.txt", O_RDWR);
   struct stat st1, st2;
