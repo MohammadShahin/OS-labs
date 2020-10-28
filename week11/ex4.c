@@ -25,7 +25,7 @@ int main() {
   char* fm2 = mmap(NULL, st2.st_size, PROT_READ | PROT_WRITE, MAP_SHARED, f2, 0);
   memcpy(fm2, fm1, st1.st_size);
   msync(fm1, st1.st_size, MS_SYNC);
-  msync(fm2, st1.st_size, MS_SYNC);
+  msync(fm2, st2.st_size, MS_SYNC);
   munmap(fm1, st1.st_size);
   munmap(fm2, st2.st_size);
   close(f1);
