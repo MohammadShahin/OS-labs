@@ -1,0 +1,24 @@
+Program 1:
+
+OUTPUT:
+Hello
+Hello
+---------------------------------------------
+
+Explanation:
+Most times, 'Hello' will be printed twice. Firstly, the word "Hello" goes inside the buffer, and the buffer isn't flushed (because there's no new line). After that, both the parent and the child inherit the unflushed buffer. So when they reach the printing line statement (printf("\n");), the buffer, which has "Hello" in it", would be flushed twice at the same time causing "Hello" to appear twice on the console. 
+
+
+*********************************************
+
+
+Program 2:
+
+OUTPUT:
+Hello
+
+
+---------------------------------------------
+
+Explanation:
+Since the first print statement adds a new line, the buffer will be flushed right after this statement, and "Hello" will appear on the console. Then the parent and the child inherit the empty buffer, and each one of them will print a new line.
