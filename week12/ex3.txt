@@ -1,0 +1,25 @@
+> time ./a.out a.out b.out
+real    0m0.002s
+user    0m0.002s
+sys     0m0.001s
+
+> gcc copy.c -DBUF_SIZE=32
+> time ./a.out a.out b.out
+real    0m0.004s
+user    0m0.000s
+sys     0m0.004s
+
+> gcc copy.c -DBUF_SIZE=1
+> time ./a.out a.out b.out
+real    0m0.050s
+user    0m0.013s
+sys     0m0.037s
+
+-- TURNED SYNC ON
+
+> gcc copy.c -DBUF_SIZE=32
+> time ./a.out a.out b.out
+real    0m18.273s
+user    0m0.008s
+sys     0m0.079s
+with buffer size = 1 it took more than 30 second so I interrupted it because it would take a lot longer. but without O_SYNC it was much faster and buffer size didn't have much impact. 
