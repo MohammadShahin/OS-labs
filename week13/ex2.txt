@@ -1,0 +1,5 @@
+Deadlock prevention takes time to check for possible deadlock every time a resource is requested. When it is not possible to know how resources are being used, preventing is a good strategy to deal with deadlocks. This may be an acceptable method for desktop systems and other non-time sensitive systems.
+
+Deadlock recovery deals with problems in case of deadlock. It is good to interrupt the proccess when it is not possible to predict the outcome, and when we know a lot of information about the processes (we know which ones to kill in order).  
+
+Deadlock avoidance is used when we cannot use recovery and prevention (but if we can at start aviod deadlock, of course we must avoid it)
