@@ -1,1 +1,2 @@
-s
+Deadlock detected!
+There are 3 deadlocked processes: 2 4 5
